@@ -105,9 +105,17 @@
     font-size: 2rem;
   }
   .text-container {
-    text-align: justify;
+    margin-bottom: 15vh;
   }
   .projects-container {
     grid-template-columns: 1fr;
+  }
+  footer {
+    height: fit-content;
+    margin: 2rem 1rem;
+  }
+  footer p {
+    text-align: center;
+    font-size: 0.7rem;
   }
 }
