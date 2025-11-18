@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -403,6 +404,7 @@ section {
   grid-template-columns: 1fr; /* Mobile = 1 col */
   gap: 2rem;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .projects-card {

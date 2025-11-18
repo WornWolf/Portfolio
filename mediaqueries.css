@@ -53,12 +53,6 @@
 
 /* Mobile */
 @media screen and (max-width: 600px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
   footer {
     height: 40vh;
   }
@@ -101,7 +95,7 @@
     font-size: 1.25rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .text-container {
     margin-bottom: 15vh;
@@ -117,4 +111,7 @@
     text-align: center;
     font-size: 0.7rem;
   }
+  #socials-container .tooltip-text {
+    display: none; 
+  } 
 }
