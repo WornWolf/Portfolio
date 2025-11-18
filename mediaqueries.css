@@ -1,5 +1,5 @@
 /* Desktop */
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1201px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -7,9 +7,11 @@
   .about-containers {
     flex-wrap: wrap;
   }
-  #contact,
   #projects {
     height: fit-content;
+  }
+ .projects-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -21,7 +23,6 @@
   #hamburger-nav {
     display: flex;
   }
-  #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
@@ -34,6 +35,7 @@
   }
   section,
   .section-container {
+    margin-top: 2rem;
     height: fit-content;
   }
   section {
@@ -47,11 +49,13 @@
   .about-containers {
     margin-top: 0;
   }
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Mobile */
 @media screen and (max-width: 600px) {
-  #contact,
   footer {
     height: 40vh;
   }
@@ -102,5 +106,8 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
   }
 }

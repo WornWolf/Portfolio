@@ -103,13 +103,16 @@ a:hover {
 
 .menu-links {
   position: absolute;
-  top: 100%;
+  top: 150%;
   right: 0;
   background-color: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  border-radius: 10%;
+  padding: 0 2rem;
+  box-shadow: rgb(0, 0, 0) 2px 2px 10px;
 }
 
 .menu-links a {
@@ -166,6 +169,7 @@ section {
 
 .section-container {
   display: flex;
+  justify-content: center;
 }
 
 /* PROFILE SECTION */
@@ -173,7 +177,7 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
   height: 80vh;
 }
 
@@ -334,16 +338,6 @@ section {
   display: flex;
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -352,6 +346,28 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+}
+
+.lists {
+  margin: 1em;
+  text-align: start;
+}
+
+.lists li {
+  font-weight: 500;
+}
+
+.lists li span {
+  font-weight: normal;
+  color: rgb(85, 85, 85);
+}
+
+.edu-item .title-edu{
+  font-weight: bold;
+}
+
+.edu-item .edu-school{
+  font-style: italic;
 }
 
 .section-container {
@@ -365,117 +381,81 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
-
-#experience {
-  position: relative;
-}
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
-
 /* PROJECTS SECTION */
-
 #projects {
-  position: relative;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile = 1 col */
+  gap: 2rem;
+  margin-top: 2rem;
+  width: auto;
+}
+
+.projects-card {
+  background: #fff;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.projects-card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 25px;
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
+  width: 90%; 
   height: 90%;
+  background-size: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 .project-title {
-  margin: 1rem;
-  color: black;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #111;
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  border-color: rgb(150, 150, 150);
+  text-decoration: none;
+  padding: 10px 0;
 }
 
-/* CONTACT */
+.project-btn:hover {
+  text-decoration: none;
+}
 
-#contact {
+.projects-card .btn-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  height: 70vh;
+  gap: 1rem;
 }
 
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+.text-container {
+  padding: 1.3rem 0;
+  color:rgb(85, 85, 85);
+  text-align: start;
+  font-size: 0.8rem;
+  height: 15vh;
+  margin-bottom: 2rem; 
 }
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
-
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  height: fit-content;
+  margin: 2rem 1rem;
 }
 
 footer p {
