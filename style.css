@@ -264,6 +264,13 @@ section {
   transition: transform 0.2s ease;
 }
 
+.github-icon {
+  cursor: pointer;
+  height: 1rem;
+  transition: transform 0.2s ease;
+  margin: 0 0.2rem;
+}
+
 .icon:hover{
   transform: scale(1.1)
 }
