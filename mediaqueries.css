@@ -30,9 +30,6 @@
   .section-container {
     display: block;
   }
-  .arrow {
-    display: none;
-  }
   section,
   .section-container {
     margin-top: 2rem;
@@ -56,6 +53,12 @@
 
 /* Mobile */
 @media screen and (max-width: 600px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
   footer {
     height: 40vh;
   }
@@ -65,10 +68,6 @@
   }
   article {
     font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
   }
   .about-containers,
   .contact-info-upper-container,
