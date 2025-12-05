@@ -389,6 +389,14 @@ section {
   margin: auto 0;
 }
 
+.indent{
+  margin-left: 40px;
+}
+
+.indent li {
+  font-weight: normal;
+}
+
 /* PROJECTS SECTION */
 #projects {
   min-height: fit-content;
