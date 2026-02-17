@@ -67,7 +67,7 @@ a:hover {
   font-size: 1.5rem;
 }
 
-.logo a{
+.logo a {
   text-decoration: none;
 }
 
@@ -189,7 +189,7 @@ section {
   margin: auto 0;
 }
 
-.section__pic-container img{
+.section__pic-container img {
   border-radius: 50%;
 }
 
@@ -223,40 +223,40 @@ section {
   gap: 1.4rem;
 }
 
- /* ปุ่ม */
-  .copy-btn {
-    position: relative;
-    cursor: pointer;
-    border: none;
-  }
+/* ปุ่ม */
+.copy-btn {
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
 
-  /* Tooltip text */
-  .copy-btn .tooltip-text {
-    visibility: hidden;
-    width: max-content;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 8px;
-    border-radius: 4px;
+/* Tooltip text */
+.copy-btn .tooltip-text {
+  visibility: hidden;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 4px;
 
-    /* ตำแหน่ง */
-    position: absolute;
-    z-index: 1;
-    top: 125%; /* เหนือปุ่ม */
-    left: 50%;
-    transform: translateX(-50%);
+  /* ตำแหน่ง */
+  position: absolute;
+  z-index: 1;
+  top: 125%; /* เหนือปุ่ม */
+  left: 50%;
+  transform: translateX(-50%);
 
-    /* animation */
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
+  /* animation */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 
-  /* แสดง tooltip */
-  .copy-btn.show-tooltip .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-  }
+/* แสดง tooltip */
+.copy-btn.show-tooltip .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
 
 /* ICONS */
 .icon {
@@ -272,16 +272,18 @@ section {
   margin: 0 0.2rem;
 }
 
-.icon:hover{
-  transform: scale(1.1)
+.icon:hover {
+  transform: scale(1.1);
 }
 
 /* BUTTONS */
 
 .btn-container {
+  padding-top: 3.2rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -370,11 +372,11 @@ section {
   color: rgb(85, 85, 85);
 }
 
-.edu-item .title-edu{
+.edu-item .title-edu {
   font-weight: bold;
 }
 
-.edu-item .edu-school{
+.edu-item .edu-school {
   font-style: italic;
 }
 
@@ -389,12 +391,21 @@ section {
   margin: auto 0;
 }
 
-.indent{
+.indent {
   margin-left: 40px;
 }
 
 .indent li {
   font-weight: normal;
+  margin: 2px 0;
+}
+
+.span-items {
+  display: inline-block;
+  font-size: x-small;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid rgb(61, 61, 61);
+  border-radius: 50px;
 }
 
 /* PROJECTS SECTION */
@@ -421,7 +432,9 @@ section {
   border-radius: 1.2rem;
   padding: 1.5rem;
   text-align: center;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .projects-card:hover {
@@ -430,7 +443,7 @@ section {
 }
 
 .project-img {
-  width: 90%; 
+  width: 90%;
   height: 90%;
   background-size: cover;
   border-radius: 1rem;
@@ -461,11 +474,11 @@ section {
 
 .text-container {
   padding: 1rem 0;
-  color:rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
   text-align: start;
   font-size: 0.8rem;
   height: 15vh;
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
 }
 /* FOOTER SECTION */
 
